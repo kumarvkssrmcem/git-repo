@@ -109,36 +109,6 @@ async function fetchAPI(username) {
   }
 }
 
-//fetch repository
-
-// async function fetchData(username) {
-//   // console.log(username)
-//   const response = await fetch(url + username + "/repos");
-
-//   if (response.ok) {
-//     const data = await response.json();
-//     console.log(data);
-
-//     const length = data.length;
-//     let pageCount = 10;
-//     for (let i = 1; i <= pageCount; i++)
-//       document.getElementById("repo").innerHTML = data[i](
-//         (repo) =>
-//           `<div class="col-6">
-//                     <div class="p-3">
-//                         <h3><a href="${repo.html_url}">${repo.name}</a></h3>
-//                         <p>${repo.description}</p>
-//                         <div>
-//                             <button class="btn btn-primary mb-3">${repo.language}</button>
-//                         </div>
-//                     </div>
-//                 </div>`
-//       ).join("");
-//   } else {
-//     const error = await response.json();
-//     console.log(error);
-//   }
-// }
 
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
