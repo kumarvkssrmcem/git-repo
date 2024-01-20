@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skeleton {
+  opacity: 0.7;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.125rem;
+}
+
+.skeleton-text:last-child {
+  margin-bottom: 0;
+  width: 80%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.profile {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 220px;
+  /* border: 1px solid black; */
+}
+
+.profile-pic img {
+  width: 80%;
+  margin: 8px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.profile-details {
+  margin: 8px;
+  padding: 4px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.profile-details p {
+  margin: 5px;
+  padding: 5px;
+}
+
+.profile-name {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.p-3 {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+#repo {
+  height: fit-content;
+}
+
+.paging {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  width: 100%;
+  height: 20px;
+}
+.paging button {
+  margin-left: 10px;
+  margin-right: 1opx;
+}

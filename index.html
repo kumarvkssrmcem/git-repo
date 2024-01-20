@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Repos</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- the navigation bar  -->
+
+    <div class="container-fluid">
+      <div class="skeleton">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand">Git-Repositories</a>
+            <form class="d-flex search" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Enter username"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+
+      <!-- the profile details -->
+
+      <div class="profile" id="profile-head">
+        <div class="profile-pic">
+          <img src="./user.png" class="img-thumbnail" alt="User" />
+          <p>
+            <a href="http://www.github.com/kumarvkssrmcem"> Go To GitHub </a>
+          </p>
+        </div>
+        <div class="profile-details">
+          <p class="profile-name">kumarvkssrmcem</p>
+          <p class="bio">Bio : I am a web developer</p>
+          <p class="palce">Place : Lucknow</p>
+          <p class="handle"><a href="handle" target="_blank"> Twitter </a></p>
+        </div>
+      </div>
+
+      <!-- the repositories -->
+
+      <div class="container overflow-hidden text-center">
+        <div class="row gy-5" id="repo">
+          <div class="col-6">
+            <div class="p-3">
+              <h3>
+                <a href="" target="_blank"></a>
+              </h3>
+              <p></p>
+              <div class="col-auto">
+                <button class="btn btn-primary mb-3"></button>
+                <button class="btn btn-primary mb-3"></button>
+                <button class="btn btn-primary mb-3"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 rep-box">
+              <h3><a href=""></a></h3>
+              <p></p>
+              <div class="col-auto">
+                <button class="btn btn-primary mb-3"></button>
+                <button class="btn btn-primary mb-3"></button>
+                <button class="btn btn-primary mb-3"></button>
+              </div>
+            </div>
+          </div>
+          <!-- <div>Search for repository by user name</div> -->
+          <div class="col-6">
+            <div class="p-3 rep-box">
+              <h3><a href=""></a></h3>
+              <p></p>
+              <div class="col-auto">
+                <button class="btn btn-primary mb-3"></button>
+                <button class="btn btn-primary mb-3"></button>
+                <button class="btn btn-primary mb-3"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 rep-box">
+              <h3><a href=""></a></h3>
+              <p></p>
+              <div class="col-auto">
+                <button class="btn btn-primary mb-3"></button>
+                <button class="btn btn-primary mb-3"></button>
+                <button class="btn btn-primary mb-3"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paging">
+      <button class="btn btn-primary" id="prev">Previous</button>
+      <button class="btn btn-primary" id="next">Next</button>
+    </div>
+
+    <script src="app.js">
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    </script>
+  </body>
+</html>
